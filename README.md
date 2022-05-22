@@ -29,10 +29,17 @@ void loop() {
   delay(2000);               // wait for a second
 }
 ```
+## Diagrama de Flujo
+```mermaid
+flowchart LR;
+  Inicio-->Delay500ms;
+  Delay500ms-->LED_ON;
+  LED_ON-->Delay500ms_2;
+  Delay500ms_2-->LED_off;
+  LED_off-->Delay500ms;
+  
+  ```
+  ## Diagrama de Tiempos
 
-flowchart LR
-  Inicio-->Delay500ms
-  Delay500ms-->LED_ON
-  LED_ON-->Delay500ms_2
-  Delay500ms_2-->LED_off
-  LED_off-->Delay500ms
+![wavedrom](https://user-images.githubusercontent.com/102526677/169705412-01ad7739-b9c4-43cd-ab52-98dd02e2e2eb.png)
+
